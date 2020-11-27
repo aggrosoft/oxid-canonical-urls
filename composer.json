@@ -1,0 +1,21 @@
+{
+  "name": "aggrosoft/oxid-canonical-urls",
+  "description": "Allow custom canonical urls for articles and categories",
+  "type": "oxideshop-module",
+  "keywords": ["oxid", "modules", "eShop"],
+  "homepage": "https://github.com/aggrosoft/oxid-canonical-urls",
+  "license": "MIT",
+  "extra": {
+    "oxideshop": {
+      "blacklist-filter": [
+        "documentation/**/*.*"
+      ],
+      "target-directory": "agcanonicalurls"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Aggrosoft\\CustomCanonicalUrl\\": "../../../source/modules/agcanonicalurls"
+    }
+  }
+}
