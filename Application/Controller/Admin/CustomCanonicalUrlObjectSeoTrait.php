@@ -39,13 +39,9 @@ trait CustomCanonicalUrlObjectSeoTrait
 
         if ($sType = $this->_getType()) {
             $oObject = oxNew($sType);
-            if ($oObject->load($this->getEditObjectId())) {
-                $oOtherLang = $oObject->getAvailableInLangs();
-                if (!isset($oOtherLang[$iLang])) {
-                    $oObject->loadInLang(key($oOtherLang), $this->getEditObjectId());
-                }
+            if ($oObject->loadInLang($iLang, $this->getEditObjectId())){
+                return $oObject;
             }
-            return $oObject;
         }
 
     }
