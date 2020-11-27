@@ -16,8 +16,7 @@ class CustomCanonicalUrlArticleDetails extends CustomCanonicalUrlArticleDetails_
             {
                 return $article->oxarticles__agcanonicalurl->value;
             }
-
-            return parent::getCanonicalUrl();
         }
+        return parent::getCanonicalUrl();
     }
 }
