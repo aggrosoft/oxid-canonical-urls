@@ -11,7 +11,11 @@ $aModule = array(
     'author'       => 'Aggrosoft GmbH',
     'extend'      => array(
         \OxidEsales\Eshop\Application\Controller\ArticleDetailsController::class => \Aggrosoft\CustomCanonicalUrl\Application\Controller\CustomCanonicalUrlArticleDetails::class,
-        \OxidEsales\Eshop\Application\Controller\Admin\ArticleSeo::class => \Aggrosoft\CustomCanonicalUrl\Application\Controller\Admin\CustomCanonicalUrlArticleSeo::class
+        \OxidEsales\Eshop\Application\Controller\Admin\ArticleSeo::class => \Aggrosoft\CustomCanonicalUrl\Application\Controller\Admin\CustomCanonicalUrlArticleSeo::class,
+        \OxidEsales\Eshop\Application\Controller\Admin\CategorySeo::class => \Aggrosoft\CustomCanonicalUrl\Application\Controller\Admin\CustomCanonicalUrlCategorySeo::class,
+        \OxidEsales\Eshop\Application\Controller\Admin\ContentSeo::class => \Aggrosoft\CustomCanonicalUrl\Application\Controller\Admin\CustomCanonicalUrlContentSeo::class,
+        \OxidEsales\Eshop\Application\Controller\Admin\ManufacturerSeo::class => \Aggrosoft\CustomCanonicalUrl\Application\Controller\Admin\CustomCanonicalUrlManufacturerSeo::class,
+        \OxidEsales\Eshop\Application\Controller\Admin\VendorSeo::class => \Aggrosoft\CustomCanonicalUrl\Application\Controller\Admin\CustomCanonicalUrlVendorSeo::class
     ),
     'blocks' => array(
         [
